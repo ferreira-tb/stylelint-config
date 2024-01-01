@@ -1,0 +1,62 @@
+{
+  "name": "@tb-dev/stylelint-config",
+  "version": "1.0.0",
+  "description": "Stylelint config",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "packageManager": "pnpm@8.13.1",
+  "homepage": "https://github.com/ferreira-tb/stylelint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ferreira-tb/stylelint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ferreira-tb/stylelint-config/issues"
+  },
+  "lint-staged": {
+    "*.{?(c|m)@(j|t)s,css,vue,md,json}": "prettier --write"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "deps": "taze -w -f -l",
+    "format": "prettier . --write",
+    "format-check": "prettier . --check",
+    "lint": "eslint . --config eslint.config.js --cache",
+    "prepare": "husky install",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard-scss": "^12.0.0",
+    "stylelint-config-standard-vue": "^1.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/node": "^20.10.5",
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "npm-run-all2": "^6.1.1",
+    "prettier": "^3.1.1",
+    "rollup": "^4.9.1",
+    "taze": "^0.13.1",
+    "tslib": "^2.6.2",
+    "typescript": "5.3.3",
+    "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  }
+}
