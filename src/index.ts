@@ -18,6 +18,10 @@ function config(options: ConfigOptions = {}): Config {
       { ignoreProperties: /font-family/, camelCaseSvgKeywords: true }
     ],
 
+    // Empty lines
+    'at-rule-empty-line-before': null,
+    'declaration-empty-line-before': null,
+
     // SCSS
     'scss/dollar-variable-colon-space-after': 'always-single-line'
   };
