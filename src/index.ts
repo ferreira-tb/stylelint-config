@@ -1,8 +1,17 @@
 import type { Config } from 'stylelint';
 
-const config: Config = {
-  extends: ['stylelint-config-standard-scss', 'stylelint-config-standard-vue/scss'],
-  rules: {
+export interface ConfigOptions {
+  /** @default false */
+  vue?: boolean;
+}
+
+export function config(options: ConfigOptions = {}): Config {
+  const configExtends: NonNullable<Config['extends']> = ['stylelint-config-standard-scss'];
+  if (options.vue) {
+    configExtends.push('stylelint-config-standard-vue/scss');
+  }
+
+  const rules: NonNullable<Config['rules']> = {
     // Case
     'value-keyword-case': [
       'lower',
@@ -11,7 +20,12 @@ const config: Config = {
 
     // Empty lines
     'declaration-empty-line-before': null
-  }
-};
+  };
+
+  return {
+    extends: configExtends,
+    rules
+  };
+}
 
 export default config;
