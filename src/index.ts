@@ -19,7 +19,10 @@ function config(options: ConfigOptions = {}): Config {
     ],
 
     // Empty lines
-    'declaration-empty-line-before': null
+    'declaration-empty-line-before': null,
+
+    // SCSS
+    'scss/dollar-variable-colon-space-after': 'always-single-line'
   };
 
   return {
