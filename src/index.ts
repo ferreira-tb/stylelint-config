@@ -5,7 +5,7 @@ export interface ConfigOptions {
   vue?: boolean;
 }
 
-export function config(options: ConfigOptions = {}): Config {
+function config(options: ConfigOptions = {}): Config {
   const configExtends: NonNullable<Config['extends']> = ['stylelint-config-standard-scss'];
   if (options.vue) {
     configExtends.push('stylelint-config-standard-vue/scss');
