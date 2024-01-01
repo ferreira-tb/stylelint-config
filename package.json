@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/stylelint-config",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Stylelint config",
   "license": "MIT",
   "type": "module",
@@ -19,11 +19,13 @@
   },
   "scripts": {
     "build": "rollup --config rollup.config.js",
+    "bump": "miho bump --no-ask --add .",
     "deps": "taze -w -f -l",
     "format": "prettier . --write",
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
     "prepare": "husky install",
+    "release": "run-s build bump && pnpm publish",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
