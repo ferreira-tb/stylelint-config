@@ -1,11 +1,11 @@
 {
   "name": "@tb-dev/stylelint-config",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "description": "Stylelint config",
   "license": "MIT",
   "type": "module",
   "private": false,
-  "packageManager": "pnpm@8.13.1",
+  "packageManager": "pnpm@8.14.0",
   "homepage": "https://github.com/ferreira-tb/stylelint-config",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "stylelint": "^16.1.0",
-    "stylelint-config-standard-scss": "^12.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-config-standard-vue": "^1.0.0"
   },
   "devDependencies": {
@@ -41,11 +41,11 @@
     "lint-staged": "^15.2.0",
     "npm-run-all2": "^6.1.1",
     "prettier": "^3.1.1",
-    "rollup": "^4.9.2",
+    "rollup": "^4.9.3",
     "taze": "^0.13.1",
     "tslib": "^2.6.2",
     "typescript": "5.3.3",
-    "vite": "^5.0.10",
+    "vite": "^5.0.11",
     "vite-plugin-dts": "^3.7.0"
   },
   "files": [
