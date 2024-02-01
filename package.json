@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/stylelint-config",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Stylelint config",
   "license": "MIT",
   "type": "module",
@@ -33,6 +33,7 @@
     "stylelint-config-standard-vue": "^1.0.0"
   },
   "devDependencies": {
+    "@tb-dev/eslint-config": "^1.7.0",
     "@types/node": "^20.11.15",
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
