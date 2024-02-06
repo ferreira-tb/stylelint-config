@@ -19,12 +19,11 @@
   },
   "scripts": {
     "build": "vite build",
-    "bump": "miho bump --no-ask --add .",
     "format": "prettier . --write",
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
-    "prepare": "husky install",
-    "release": "pnpm run build && pnpm run bump && pnpm publish",
+    "prepare": "husky",
+    "release": "pnpm run build && pnpm publish",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
@@ -33,13 +32,13 @@
     "stylelint-config-standard-vue": "^1.0.0"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^1.7.0",
-    "@types/node": "^20.11.15",
+    "@tb-dev/eslint-config": "^1.8.0",
+    "@types/node": "^20.11.16",
     "eslint": "^8.56.0",
     "husky": "^9.0.10",
-    "lint-staged": "^15.2.1",
-    "prettier": "^3.2.4",
-    "taze": "^0.13.2",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "taze": "^0.13.3",
     "tslib": "^2.6.2",
     "typescript": "5.3.3",
     "vite": "^5.0.12",
