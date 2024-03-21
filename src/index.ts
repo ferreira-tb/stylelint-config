@@ -20,6 +20,7 @@ function config(options: ConfigOptions = {}): Config {
 
     // Empty lines
     'at-rule-empty-line-before': null,
+    'custom-property-empty-line-before': null,
     'declaration-empty-line-before': null,
 
     // SCSS
