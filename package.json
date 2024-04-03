@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/stylelint-config",
-  "version": "1.1.14",
+  "version": "1.1.15",
   "description": "Stylelint config",
   "license": "MIT",
   "type": "module",
@@ -28,21 +28,21 @@
     "update": "miho update major -t"
   },
   "dependencies": {
-    "stylelint": "^16.3.0",
-    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint": "^16.3.1",
+    "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-config-standard-vue": "^1.0.0"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^3.2.3",
-    "@types/node": "^20.11.30",
+    "@tb-dev/eslint-config": "^3.3.3",
+    "@types/node": "^20.12.3",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "tslib": "^2.6.2",
     "typescript": "^5.4.3",
-    "vite": "^5.2.6",
-    "vite-plugin-dts": "^3.7.3"
+    "vite": "^5.2.8",
+    "vite-plugin-dts": "^3.8.1"
   },
   "files": [
     "dist/**/*"
